@@ -1,4 +1,4 @@
-# Readme can edit, look release for exe
+# I will edit readme , look release for exe
 cmake -G"MSYS Makefiles" ..
 make
 # Audio Waveform Image Generator
