@@ -88,13 +88,6 @@ if(LIBMAD_FOUND)
     include_directories(${LIBMAD_INCLUDE_DIR})
 endif(LIBMAD_FOUND)
 
-find_package(LibId3Tag REQUIRED)
-if(LIBID3TAG_FOUND)
-    message(STATUS "LIBID3TAG_INCLUDE_DIR='${LIBID3TAG_INCLUDE_DIR}'")
-    message(STATUS "LIBID3TAG_LIBRARY=${LIBID3TAG_LIBRARY}")
-    include_directories(${LIBID3TAG_INCLUDE_DIR})
-endif(LIBID3TAG_FOUND)
-
 
 find_package(Boost 1.66.0 COMPONENTS program_options filesystem regex system REQUIRED)
 if(Boost_FOUND)
@@ -249,7 +242,7 @@ add_executable(audiowaveform ${SRCS})
 #-------------------------------------------------------------------------------
 
 # Specify libraries to link against.
-set(LIBS ${LIBSNDFILE_LIBRARY} ${LIBGD_LIBRARY} ${LIBMAD_LIBRARY}  ${LIBID3TAG_LIBRARY} ${Boost_LIBRARIES})
+set(LIBS ${LIBSNDFILE_LIBRARY} ${LIBGD_LIBRARY} ${LIBMAD_LIBRARY}  ${Boost_LIBRARIES})
 target_link_libraries(audiowaveform ${LIBS})
 
 #-------------------------------------------------------------------------------

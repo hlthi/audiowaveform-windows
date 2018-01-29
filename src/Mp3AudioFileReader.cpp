@@ -57,7 +57,6 @@
 #include "Streams.h"
 
 #include <sys/stat.h>
-#include <id3.h>
 #include <mad.h>
 
 #include <climits>
