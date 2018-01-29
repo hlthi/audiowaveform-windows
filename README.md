@@ -1,3 +1,4 @@
+# Readme can edit, look release for exe
 # Audio Waveform Image Generator
 
 [![Build Status](https://travis-ci.org/bbc/audiowaveform.svg?branch=master)](https://travis-ci.org/bbc/audiowaveform)
