@@ -1,0 +1,6 @@
+build
+googlemock
+googletest
+googletest-release-1.8.0
+cmake-build-debug
+.idea
