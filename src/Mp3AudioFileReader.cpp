@@ -405,7 +405,7 @@ bool Mp3AudioFileReader::skipId3Tags() {
         }
 
         for (int i = 0; i < items_read - 1; i++) {
-            if (buffer[i] == 255 && buffer[i + 1] >= 240 && buffer[i + 1] <= 255) {
+            if (buffer[i] == 255 && buffer[i + 1] >= 224 && buffer[i + 1] <= 255) {
                 start = i;
                 isFinish = true;
                 break;
